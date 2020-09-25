@@ -1,7 +1,7 @@
 return {
 PlaceObj('ModItemCommanderProfilePreset', {
 	additional_colonists_per_rocket = -6,
-	additional_initial_applicants = -50,
+	additional_initial_applicants = -25,
 	additional_research_points = -100,
 	anomaly_bonus_breakthrough = range(10, 5),
 	challenge_mod = 50,
@@ -10,6 +10,7 @@ PlaceObj('ModItemCommanderProfilePreset', {
 	effect = T(333467758985, --[[ModItemCommanderProfilePreset Default investigator effect]] "All your life, your passion has been knowledge - seeking out what nobody else knows, discovering the wonders of the universe. Mars is a logical next step: more mysteries, more discoveries, and tougher challenges."),
 	group = "Default",
 	id = "investigator",
+	name = "investigator",
 }),
 PlaceObj('ModItemCropPreset', {
 	CropEntity = "CropAlgae",
@@ -17,9 +18,9 @@ PlaceObj('ModItemCropPreset', {
 	DisplayName = T(610083327174, --[[ModItemCropPreset biofuel DisplayName]] "Biofuel"),
 	DisplayNamePlural = T(312798831637, --[[ModItemCropPreset biofuel DisplayNamePlural]] "Biofuel"),
 	FarmClass = "FarmHydroponic",
-	FoodOutput = 100000,
-	GrowthTime = 2160000,
-	InitialGrowthTime = 2160000,
+	FoodOutput = 30000,
+	GrowthTime = 720000,
+	InitialGrowthTime = 720000,
 	OxygenProduction = 100,
 	ResourceType = "Fuel",
 	WaterDemand = 500,
