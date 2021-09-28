@@ -15,6 +15,9 @@ Currently, this provides the following features:
   biofuel from algae, and an all-natural fiber that can be used like polymers.
 
   These lack artwork and are probably not well balanced. Numbers need tweaking.
+  Might also currently be broken (in a recent change, I hid it behind a game
+  rule selection; maybe the functionality needs to be global but the game rule
+  unlocks them??).
 
 * Game Rule: "International Trade". Probably so unbalanced as to count as a
   cheat. Unlocks every sponsor's rovers.
