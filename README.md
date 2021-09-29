@@ -28,3 +28,48 @@ Currently, this provides the following features:
   Tunnelling. These can all show up in the very first position in their
   respective tech trees (apart from Dozer Rover; it's cleaner to not double up
   with the auto-unlock of Martian Vegetation for the Terraforming Initiative).
+
+
+Tech IDs for DLC techs:
+
+* LowGShaftDigging: Low-G Shaft Tunnelling
+* SelfSufficientLighting: Self-Sufficient Lighting
+* DroneHubExtenders: Drone Hub Extenders
+* MicroGLanders: Micro-G Landers
+* MicroGVehicles: Micro-G Vehicles
+* ReconCenter: Recon Center
+* LowGTunnelSupports: Low-G Tunnel Supports
+* UndergroundDomes: Underground Dome Construction
+* LowGExcavationPermits: Low-G Excavation Permits
+* MicroGMining: Micro-G Mining
+* AdvancedGravityManeuvers: Advanced Gravity Maneuvers
+* ExtendedCargoModules: Extended Cargo Modules
+* UndergroundFlightSchool: Underground Flight School
+* AdvancedMicroGMiningOperations: Advanced Micro-G Mining Operations
+* SignalBoosters: Signal Boosters
+* DeepAsteroidMining: Deep Asteroid Mining
+* AdvancedLandingTechniques: Advanced Landing Techniques
+* DeepSpaceScanning: Deep Space Scanning
+* UndergroundPsychStudies: Underground Psych Studies
+* PrefabRefab: Prefab-Refab
+
+* MartianVegetation: Martian Vegetation
+* TerraformingRover: Dozer Rover
+* PlanetarySurvey: Planetary Survey
+* TopologyAI: Topology AI 
+* GreenhouseMars: Greenhouse Mars
+* TerraformingSubsidies: Terraforming Subsidies
+* ConservationLandscaping: Conservation Landscaping
+* InterplanetaryProjects: Interplanetary Projects
+* GrowthStimulators: Growth Stimulators
+* LakeCrafting: Lake Crafting
+* AdaptedVegetation: Adapted Vegetation
+* CarbonateProcessor: Carbonate Processor
+* TeraTourism: Terra Tourism
+* DomelessFarming: Domeless Farming
+* MagneticFieldGenerator: Magnetic Field Generator
+* CoreHeatConvertor: Core Heat Convector
+* NuclearTerraforming: Nuclear Terraforming
+* TerraformingAmplification: Terraforming Amplification
+* MegaSatellites: Mega Satellites
+* PlanetaryProjects: Planetary Projects
