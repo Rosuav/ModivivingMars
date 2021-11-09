@@ -11,6 +11,9 @@ Currently, this provides the following features:
 
   This is a challenging commander profile, but a rewarding one.
 
+* Commander Profile: "Roboticist". Start with the ability to design and build
+  biorobots. Unfortunately for you, people feel slighted...
+
 * Game Rule: "Crop Shed". Unlocks some additional utility crops: hydroponic
   biofuel from algae, and an all-natural fiber that can be used like polymers.
 
