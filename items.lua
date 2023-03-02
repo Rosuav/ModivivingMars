@@ -29,6 +29,23 @@ PlaceObj('ModItemCommanderProfilePreset', {
 	name = "investigator",
 }),
 PlaceObj('ModItemCropPreset', {
+	CropEntity = "CropAlgae",
+	Desc = T(--[[ModItemCropPreset biofuel Desc]] "Ethanol produced by dedicated biofuel crops"),
+	DisplayName = T(--[[ModItemCropPreset biofuel DisplayName]] "Biofuel"),
+	DisplayNamePlural = T(--[[ModItemCropPreset biofuel DisplayNamePlural]] "Biofuel"),
+	FarmClass = "FarmHydroponic",
+	FoodOutput = 30000,
+	GrowthTime = 720000,
+	InitialGrowthTime = 720000,
+	Locked = true,
+	OxygenProduction = 100,
+	ResourceType = "Fuel",
+	WaterDemand = 500,
+	comment = "Biofuel",
+	group = "Hydroponic Farm",
+	id = "biofuel",
+}),
+PlaceObj('ModItemCropPreset', {
 	CropEntity = "CropRapeseed",
 	Desc = T(--[[ModItemCropPreset fibrous-leaf Desc]] "Tasteless, tough, and completely unappetizing, these plants have the saving grace that their tough fibers can be spun into natural plastics and their leaves will improve the soil for the next crop."),
 	DisplayName = T(--[[ModItemCropPreset fibrous-leaf DisplayName]] "Fibrous Leaf Plants"),
@@ -60,22 +77,56 @@ PlaceObj('ModItemCropPreset', {
 	group = "Hydroponic Farm",
 	id = "fibers",
 }),
-PlaceObj('ModItemCropPreset', {
-	CropEntity = "CropAlgae",
-	Desc = T(--[[ModItemCropPreset biofuel Desc]] "Ethanol produced by dedicated biofuel crops"),
-	DisplayName = T(--[[ModItemCropPreset biofuel DisplayName]] "Biofuel"),
-	DisplayNamePlural = T(--[[ModItemCropPreset biofuel DisplayNamePlural]] "Biofuel"),
-	FarmClass = "FarmHydroponic",
-	FoodOutput = 30000,
-	GrowthTime = 720000,
-	InitialGrowthTime = 720000,
-	Locked = true,
-	OxygenProduction = 100,
-	ResourceType = "Fuel",
-	WaterDemand = 500,
-	comment = "Biofuel",
-	group = "Hydroponic Farm",
-	id = "biofuel",
+PlaceObj('ModItemGameRules', {
+	comment = "Common Thread",
+	description = T(494939656196, --[[ModItemGameRules common-thread description]] "Trail a thread behind you as you go to Mars. What could possibly go wrong?"),
+	display_name = T(369003140190, --[[ModItemGameRules common-thread display_name]] "Common Thread"),
+	flavor = T(397351923454, --[[ModItemGameRules common-thread flavor]] '"There is a scarlet thread of commerce running through the tangled skein of life..."'),
+	group = "Default",
+	id = "common-thread",
+	PlaceObj('Effect_GrantPrefab', {
+		Prefab = "SpaceElevator",
+	}),
+}),
+PlaceObj('ModItemGameRules', {
+	challenge_mod = -50,
+	comment = "Asteroids",
+	description = T(390364216885, --[[ModItemGameRules astertech description]] "We researched asteroids in as many ways as we could before sending you out there!"),
+	display_name = T(994072889640, --[[ModItemGameRules astertech display_name]] "Asteroids"),
+	group = "Default",
+	id = "astertech",
+	PlaceObj('Effect_GrantTech', {
+		Field = "ReconAndExpansion",
+		Research = "MicroGLanders",
+	}),
+	PlaceObj('Effect_GrantTech', {
+		Field = "ReconAndExpansion",
+		Research = "ReconCenter",
+	}),
+	PlaceObj('Effect_GrantTech', {
+		Field = "ReconAndExpansion",
+		Research = "MicroGMining",
+	}),
+	PlaceObj('Effect_GrantTech', {
+		Field = "ReconAndExpansion",
+		Research = "AdvancedGravityManeuvers",
+	}),
+	PlaceObj('Effect_GrantTech', {
+		Field = "ReconAndExpansion",
+		Research = "ExtendedCargoModules",
+	}),
+	PlaceObj('Effect_GrantTech', {
+		Field = "ReconAndExpansion",
+		Research = "AdvancedLandingTechniques",
+	}),
+	PlaceObj('Effect_GrantTech', {
+		Field = "ReconAndExpansion",
+		Research = "DeepSpaceScanning",
+	}),
+	PlaceObj('Effect_GrantTech', {
+		Field = "ReconAndExpansion",
+		Research = "PrefabRefab",
+	}),
 }),
 PlaceObj('ModItemGameRules', {
 	comment = "Power User",
@@ -141,43 +192,18 @@ PlaceObj('ModItemGameRules', {
 	}),
 }),
 PlaceObj('ModItemGameRules', {
-	challenge_mod = -50,
-	comment = "Asteroids",
-	description = T(390364216885, --[[ModItemGameRules astertech description]] "We researched asteroids in as many ways as we could before sending you out there!"),
-	display_name = T(994072889640, --[[ModItemGameRules astertech display_name]] "Asteroids"),
+	challenge_mod = -20,
+	description = T(909534856040, --[[ModItemGameRules crop-shed description]] "Delve through the seed shed to find some things that might be worth growing."),
+	display_name = T(289995570322, --[[ModItemGameRules crop-shed display_name]] "Crop Shed"),
+	flavor = T(580199721104, --[[ModItemGameRules crop-shed flavor]] '"I\'ve no idea what this is. Doesn\'t look edible. Grow it anyway!"'),
 	group = "Default",
-	id = "astertech",
-	PlaceObj('Effect_GrantTech', {
-		Field = "ReconAndExpansion",
-		Research = "MicroGLanders",
-	}),
-	PlaceObj('Effect_GrantTech', {
-		Field = "ReconAndExpansion",
-		Research = "ReconCenter",
-	}),
-	PlaceObj('Effect_GrantTech', {
-		Field = "ReconAndExpansion",
-		Research = "MicroGMining",
-	}),
-	PlaceObj('Effect_GrantTech', {
-		Field = "ReconAndExpansion",
-		Research = "AdvancedGravityManeuvers",
-	}),
-	PlaceObj('Effect_GrantTech', {
-		Field = "ReconAndExpansion",
-		Research = "ExtendedCargoModules",
-	}),
-	PlaceObj('Effect_GrantTech', {
-		Field = "ReconAndExpansion",
-		Research = "AdvancedLandingTechniques",
-	}),
-	PlaceObj('Effect_GrantTech', {
-		Field = "ReconAndExpansion",
-		Research = "DeepSpaceScanning",
-	}),
-	PlaceObj('Effect_GrantTech', {
-		Field = "ReconAndExpansion",
-		Research = "PrefabRefab",
+	id = "crop-shed",
+	PlaceObj('Effect_Code', {
+		OnLoadEffect = function (self, colony, parent)
+UnlockCrop("biofuel");
+UnlockCrop("fibrous-leaf");
+UnlockCrop("fibers");
+end,
 	}),
 }),
 PlaceObj('ModItemGameRules', {
@@ -267,29 +293,55 @@ PlaceObj('ModItemGameRules', {
 		Research = "LowGShaftDigging",
 	}),
 }),
-PlaceObj('ModItemGameRules', {
-	challenge_mod = -20,
-	description = T(909534856040, --[[ModItemGameRules crop-shed description]] "Delve through the seed shed to find some things that might be worth growing."),
-	display_name = T(289995570322, --[[ModItemGameRules crop-shed display_name]] "Crop Shed"),
-	flavor = T(580199721104, --[[ModItemGameRules crop-shed flavor]] '"I\'ve no idea what this is. Doesn\'t look edible. Grow it anyway!"'),
+PlaceObj('ModItemMissionSponsorPreset', {
+	Drone = 6,
+	Electronics = 10,
+	ExplorerRover = 1,
+	MachineParts = 15,
+	MoistureVaporator = 1,
+	OrbitalProbe = 1,
+	Polymers = 10,
+	RCTransport = 1,
+	StirlingGenerator = 1,
+	WeightCostModifierGroup = "Rovers",
+	WeightModifierPercent = 50,
+	comment = "Test Sponsor",
+	display_name = T(286185714758, --[[ModItemMissionSponsorPreset Default testsponsor display_name]] "Test Sponsor"),
+	goal_1_param_1 = "5",
+	goal_2_param_1 = "1",
+	goal_2_param_2 = "30",
+	goal_3_param_1 = "500000",
+	goal_4_param_1 = "3000000000",
+	goal_5_param_1 = "Workaholic",
+	goal_5_param_2 = "Enthusiastic",
+	goal_5_param_3 = "Engineer",
 	group = "Default",
-	id = "crop-shed",
-	PlaceObj('Effect_Code', {
-		OnLoadEffect = function (self, colony, parent)
-UnlockCrop("biofuel");
-UnlockCrop("fibrous-leaf");
-UnlockCrop("fibers");
-end,
+	id = "testsponsor",
+	initial_techs_unlocked = 20,
+	name = "testsponsor",
+	pod_class = "SupplyPod",
+	reward_effect_1 = PlaceObj('RewardNewRocket', {
+		'rocket_class', "ZeusRocket",
 	}),
-}),
-PlaceObj('ModItemGameRules', {
-	comment = "Common Thread",
-	description = T(494939656196, --[[ModItemGameRules common-thread description]] "Trail a thread behind you as you go to Mars. What could possibly go wrong?"),
-	display_name = T(369003140190, --[[ModItemGameRules common-thread display_name]] "Common Thread"),
-	flavor = T(397351923454, --[[ModItemGameRules common-thread flavor]] '"There is a scarlet thread of commerce running through the tangled skein of life..."'),
-	id = "common-thread",
-	PlaceObj('Effect_GrantPrefab', {
-		Prefab = "SpaceElevator",
+	reward_effect_2 = PlaceObj('RewardSponsorResearch', {
+		'Amount', 400,
 	}),
+	reward_effect_3 = PlaceObj('DiscoverTech', {
+		'Field', "Breakthroughs",
+		'Tech', "SuperconductingComputing",
+		'Cost', 4000,
+	}),
+	reward_effect_4 = PlaceObj('ModifyCargoPrice', {
+		'Cargo', "-all-",
+		'Percent', -25,
+	}),
+	reward_effect_5 = PlaceObj('RewardFunding', nil),
+	sponsor_goal_1 = "AnalyzeAnomalies",
+	sponsor_goal_2 = "DepleteUndergroundDepositsTimed",
+	sponsor_goal_3 = "GeneratePower",
+	sponsor_goal_4 = "SpendFunding",
+	sponsor_goal_5 = "SpecialistWith2Traits",
+	sponsor_nation_name1 = "Japanese",
+	sponsor_nation_percent1 = 100,
 }),
 }
