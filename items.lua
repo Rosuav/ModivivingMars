@@ -317,7 +317,6 @@ PlaceObj('ModItemMissionSponsorPreset', {
 	goal_5_param_3 = "Engineer",
 	group = "Default",
 	id = "testsponsor",
-	initial_techs_unlocked = 20,
 	name = "testsponsor",
 	pod_class = "SupplyPod",
 	reward_effect_1 = PlaceObj('RewardNewRocket', {
