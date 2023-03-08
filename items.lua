@@ -16,6 +16,7 @@ PlaceObj('ModItemCommanderProfilePreset', {
 	tech4 = "ServiceBots",
 }),
 PlaceObj('ModItemCommanderProfilePreset', {
+	SortKey = 1,
 	additional_colonists_per_rocket = -6,
 	additional_initial_applicants = -25,
 	additional_research_points = -100,
@@ -58,6 +59,7 @@ PlaceObj('ModItemCropPreset', {
 	OxygenProduction = 100,
 	ResourceType = "Polymers",
 	SoilEffect = 75,
+	SortKey = 1,
 	comment = "Fibrous Leaf Plants",
 	group = "Farm",
 	icon = "UI/Icons/Buildings/crops_silk_trees.tga",
@@ -73,6 +75,7 @@ PlaceObj('ModItemCropPreset', {
 	InitialGrowthTime = 720000,
 	Locked = true,
 	ResourceType = "Polymers",
+	SortKey = 2,
 	comment = "Natural Fibers",
 	group = "Hydroponic Farm",
 	id = "fibers",
@@ -89,6 +92,7 @@ PlaceObj('ModItemGameRules', {
 	}),
 }),
 PlaceObj('ModItemGameRules', {
+	SortKey = 1,
 	challenge_mod = -50,
 	comment = "Asteroids",
 	description = T(390364216885, --[[ModItemGameRules astertech description]] "We researched asteroids in as many ways as we could before sending you out there!"),
@@ -129,6 +133,7 @@ PlaceObj('ModItemGameRules', {
 	}),
 }),
 PlaceObj('ModItemGameRules', {
+	SortKey = 2,
 	comment = "Power User",
 	description = T(581852839047, --[[ModItemGameRules poweruser description]] "Following in the footsteps of Nikola Tesla, you try your best to use electricity in ways it's never before been used!"),
 	display_name = T(972079334409, --[[ModItemGameRules poweruser display_name]] "Power User"),
@@ -164,6 +169,7 @@ PlaceObj('ModItemGameRules', {
 	}),
 }),
 PlaceObj('ModItemGameRules', {
+	SortKey = 3,
 	challenge_mod = -50,
 	comment = "International Trade",
 	description = T(471790995115, --[[ModItemGameRules intl-trade description]] "Trade with other sponsors, allowing you to purchase their unique vehicles."),
@@ -192,6 +198,7 @@ PlaceObj('ModItemGameRules', {
 	}),
 }),
 PlaceObj('ModItemGameRules', {
+	SortKey = 4,
 	challenge_mod = -20,
 	description = T(909534856040, --[[ModItemGameRules crop-shed description]] "Delve through the seed shed to find some things that might be worth growing."),
 	display_name = T(289995570322, --[[ModItemGameRules crop-shed display_name]] "Crop Shed"),
@@ -207,6 +214,7 @@ end,
 	}),
 }),
 PlaceObj('ModItemGameRules', {
+	SortKey = 5,
 	challenge_mod = -50,
 	comment = "Infrastructure",
 	description = T(936949416727, --[[ModItemGameRules infra description]] "A Mars colony depends on good infrastructure. Begin with an experimental dome design."),
@@ -245,6 +253,7 @@ PlaceObj('ModItemGameRules', {
 	}),
 }),
 PlaceObj('ModItemGameRules', {
+	SortKey = 6,
 	challenge_mod = -100,
 	comment = "Portable Hole",
 	description = T(264478022067, --[[ModItemGameRules portable-hole description]] "Here, go to Mars, put this hole on the ground, and look inside."),
@@ -256,6 +265,7 @@ PlaceObj('ModItemGameRules', {
 	}),
 }),
 PlaceObj('ModItemGameRules', {
+	SortKey = 7,
 	challenge_mod = -50,
 	comment = "Tech Bootstrap",
 	description = T(471790995116, --[[ModItemGameRules techstrap description]] "Take advantage of simulator research to get a head-start on Martian technology."),
@@ -291,6 +301,21 @@ PlaceObj('ModItemGameRules', {
 	PlaceObj('Effect_GrantTech', {
 		Field = "ReconAndExpansion",
 		Research = "LowGShaftDigging",
+	}),
+}),
+PlaceObj('ModItemGameRules', {
+	SortKey = 8,
+	challenge_mod = 250,
+	description = T(496713096418, --[[ModItemGameRules challenge-me-up description]] "Take on some extra challenges!"),
+	display_name = T(271419554754, --[[ModItemGameRules challenge-me-up display_name]] "Challenge me"),
+	group = "Default",
+	id = "challenge-me-up",
+	PlaceObj('Effect_Funding', {
+		Funding = -1000,
+	}),
+	PlaceObj('Effect_TechBoost', {
+		Field = "All Fields",
+		Percent = -50,
 	}),
 }),
 PlaceObj('ModItemMissionSponsorPreset', {
