@@ -151,15 +151,16 @@ PlaceObj('ModItemGameRules', {
 	}),
 	PlaceObj('Effect_GrantTech', {
 		Field = "Breakthroughs",
-		Research = "EternalFusion",
-	}),
-	PlaceObj('Effect_GrantTech', {
-		Field = "Breakthroughs",
 		Research = "HypersensitivePhotovoltaics",
 	}),
-	PlaceObj('Effect_GrantTech', {
-		Field = "Breakthroughs",
-		Research = "PlutoniumSynthesis",
+	PlaceObj('Effect_UnlockUpgrade', {
+		Upgrade = "FusionReactor_EternalFusion",
+	}),
+	PlaceObj('Effect_UnlockUpgrade', {
+		Upgrade = "StirlingGenerator_PlutoniumCore",
+	}),
+	PlaceObj('Effect_UnlockUpgrade', {
+		Upgrade = "AdvancedStirlingGenerator_PlutoniumCore",
 	}),
 	PlaceObj('Effect_GrantTech', {
 		Field = "Breakthroughs",
@@ -170,8 +171,13 @@ PlaceObj('ModItemGameRules', {
 		Research = "SuperiorCables",
 	}),
 	PlaceObj('Effect_GrantTech', {
-		Field = "Social",
-		Research = "DreamReality",
+		Field = "ReconAndExpansion",
+		Research = "SignalBoosters",
+	}),
+	PlaceObj('Effect_ModifyLabel', {
+		Amount = 25,
+		Label = "DroneHub",
+		Prop = "DroneHubOrderDroneRange",
 	}),
 }),
 PlaceObj('ModItemGameRules', {
@@ -201,6 +207,10 @@ PlaceObj('ModItemGameRules', {
 	PlaceObj('Effect_GrantTech', {
 		Field = "Breakthroughs",
 		Research = "GlobalSupport",
+	}),
+	PlaceObj('Effect_GrantPrefab', {
+		Prefab = "RareMetalsRefinery",
+		comment = "Since the resupply unlocks don't work... need to fix that though",
 	}),
 }),
 PlaceObj('ModItemGameRules', {
@@ -426,7 +436,15 @@ PlaceObj('ModItemMissionSponsorPreset', {
 		'cargo_list', {
 			PlaceObj('RocketCargoItem', {
 				'cargo', "PreciousMinerals",
-				'amount', 100,
+				'amount', 1000,
+			}),
+			PlaceObj('RocketCargoItem', {
+				'cargo', "RCTerraformer",
+				'amount', 1,
+			}),
+			PlaceObj('RocketCargoItem', {
+				'cargo', "Battery_WaterFuelCell",
+				'amount', 1,
 			}),
 		},
 		'AssociateWithStoryBit', false,
@@ -435,8 +453,9 @@ PlaceObj('ModItemMissionSponsorPreset', {
 		'Field', "ReconAndExpansion",
 		'Amount', 50,
 	}),
-	reward_effect_3 = PlaceObj('RewardExportPrice', {
-		'Percent', 20,
+	reward_effect_3 = PlaceObj('RewardTech', {
+		'Field', "Breakthroughs",
+		'Research', "GemArchitecture",
 	}),
 	reward_effect_4 = PlaceObj('RewardSponsorResearch', {
 		'Amount', 100,
