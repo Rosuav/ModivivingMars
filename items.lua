@@ -90,6 +90,14 @@ PlaceObj('ModItemGameRules', {
 	PlaceObj('Effect_GrantPrefab', {
 		Prefab = "SpaceElevator",
 	}),
+	PlaceObj('Effect_ModifyLabel', {
+		Label = "SpaceElevator",
+		Prop = "disable_electricity_consumption",
+	}),
+	PlaceObj('Effect_ModifyLabel', {
+		Label = "SpaceElevator",
+		Prop = "disable_maintenance",
+	}),
 }),
 PlaceObj('ModItemGameRules', {
 	SortKey = 1,
@@ -145,16 +153,13 @@ PlaceObj('ModItemGameRules', {
 	display_name = T(972079334409, --[[ModItemGameRules poweruser display_name]] "Power User"),
 	group = "Default",
 	id = "poweruser",
-	PlaceObj('Effect_GrantTech', {
-		Field = "Breakthroughs",
-		Research = "SuperconductingComputing",
-	}),
-	PlaceObj('Effect_GrantTech', {
-		Field = "Breakthroughs",
-		Research = "HypersensitivePhotovoltaics",
-	}),
 	PlaceObj('Effect_UnlockUpgrade', {
 		Upgrade = "FusionReactor_EternalFusion",
+	}),
+	PlaceObj('Effect_ModifyLabel', {
+		Amount = 16,
+		Label = "Consts",
+		Prop = "ElectricityForResearchPoint",
 	}),
 	PlaceObj('Effect_UnlockUpgrade', {
 		Upgrade = "StirlingGenerator_PlutoniumCore",
@@ -164,20 +169,11 @@ PlaceObj('ModItemGameRules', {
 	}),
 	PlaceObj('Effect_GrantTech', {
 		Field = "Breakthroughs",
-		Research = "WirelessPower",
-	}),
-	PlaceObj('Effect_GrantTech', {
-		Field = "Breakthroughs",
 		Research = "SuperiorCables",
 	}),
 	PlaceObj('Effect_GrantTech', {
 		Field = "ReconAndExpansion",
 		Research = "SignalBoosters",
-	}),
-	PlaceObj('Effect_ModifyLabel', {
-		Amount = 25,
-		Label = "DroneHub",
-		Prop = "DroneHubOrderDroneRange",
 	}),
 }),
 PlaceObj('ModItemGameRules', {
@@ -189,8 +185,9 @@ PlaceObj('ModItemGameRules', {
 	flavor = T(474317680530, --[[ModItemGameRules intl-trade flavor]] '"Free trade is the key. Once you can control that, you can control anything."'),
 	group = "Default",
 	id = "intl-trade",
-	PlaceObj('Effect_UnlockResupplyItem', {
-		Item = "RCConstructor",
+	PlaceObj('Effect_TechUnlockBuilding', {
+		Building = "RCConstructorBuilding",
+		comment = "Will this work instead of unlocking supply items?",
 	}),
 	PlaceObj('Effect_UnlockResupplyItem', {
 		Item = "RCDriller",
@@ -251,10 +248,6 @@ PlaceObj('ModItemGameRules', {
 	}),
 	PlaceObj('Effect_GrantTech', {
 		Field = "Breakthroughs",
-		Research = "Construction Nanites",
-	}),
-	PlaceObj('Effect_GrantTech', {
-		Field = "Breakthroughs",
 		Research = "AutonomousHubs",
 	}),
 	PlaceObj('Effect_GrantTech', {
@@ -263,9 +256,6 @@ PlaceObj('ModItemGameRules', {
 	}),
 	PlaceObj('Effect_GrantPrefab', {
 		Prefab = "DomeDiamond",
-	}),
-	PlaceObj('Effect_GrantPrefab', {
-		Prefab = "TriboelectricScrubber",
 	}),
 }),
 PlaceObj('ModItemGameRules', {
