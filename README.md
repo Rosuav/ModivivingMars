@@ -1,7 +1,10 @@
 Moddiviving Mars
 ================
 
-A few little tinkerings with modding "Surviving Mars".
+A few little tinkerings with modding "Surviving Mars". NOTE: This branch works
+with the original edition of the game, but probably will not work with the
+updated "Surviving Mars Relaunched". It is now static and not being updated.
+The master branch contains the actively developed version of this mod.
 
 Currently, this provides the following features:
 
