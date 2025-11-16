@@ -53,7 +53,7 @@ PlaceObj('ModItemGameRuleDef', {
 
 PlaceObj('ModItemGameRuleDef', {
 	SortKey = 3,
-	challenge_mod = -50,
+	challenge_mod = -25,
 	description = T(368671976932, --[[ModItemGameRuleDef intl-trade description]] "Trade with other sponsors, allowing you to purchase their unique vehicles."),
 	display_name = T(650940583060, --[[ModItemGameRuleDef intl-trade display_name]] "International Trade"),
 	flavor_text = T(215847288024, --[[ModItemGameRuleDef intl-trade flavor_text]] "Free trade is the key. Once you can control that, you can control anything."),
@@ -61,24 +61,6 @@ PlaceObj('ModItemGameRuleDef', {
 	id = "intl-trade",
 	mod_handle = 5,
 	save_in = "Mod/qKwMjRQ",
-	PlaceObj('Effect_UnlockResupplyItem', {
-		Item = "RCDriller",
-	}),
-	PlaceObj('Effect_UnlockResupplyItem', {
-		Item = "RCSolar",
-	}),
-	PlaceObj('Effect_UnlockResupplyItem', {
-		Item = "RCConstructor",
-	}),
-	PlaceObj('Effect_UnlockResupplyItem', {
-		Item = "RareMetalsRefinery",
-	}),
-	PlaceObj('Effect_UnlockResupplyItem', {
-		Item = "RCHarvester",
-	}),
-	PlaceObj('Effect_UnlockResupplyItem', {
-		Item = "RCSensor",
-	}),
 	PlaceObj('Effect_GrantTech', {
 		Field = "Breakthroughs",
 		Research = "GlobalSupport",
@@ -103,15 +85,21 @@ PlaceObj('ModItemGameRuleDef', {
 		Research = "AdvancedMartianEngines",
 	}),
 	PlaceObj('Effect_GrantTech', {
-		Field = "Breakthroughs",
-		Research = "AutonomousHubs",
-	}),
-	PlaceObj('Effect_GrantTech', {
 		Field = "Physics",
 		Research = "DeepScanning",
 	}),
 	PlaceObj('Effect_GrantPrefab', {
 		Prefab = "DomeDiamond",
+	}),
+	PlaceObj('Effect_ModifyLabel', {
+		Label = "DroneHub",
+		Percent = -100,
+		Prop = "electricity_consumption",
+	}),
+	PlaceObj('Effect_ModifyLabel', {
+		Label = "DroneHub",
+		Percent = -100,
+		Prop = "maintenance_build_up_per_hr",
 	}),
 })
 
@@ -162,6 +150,11 @@ PlaceObj('ModItemGameRuleDef', {
 	PlaceObj('Effect_GrantTech', {
 		Field = "ReconAndExpansion",
 		Research = "LowGShaftDigging",
+	}),
+	PlaceObj('Effect_TechBoost', {
+		Field = "Breakthroughs",
+		Percent = -90,
+		comment = "temp hack for testing",
 	}),
 })
 

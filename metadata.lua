@@ -2,10 +2,11 @@ return PlaceObj('ModDef', {
 	'title', "RosMod",
 	'id', "qKwMjRQ",
 	'author', "Rosuav",
-	'version', 3,
+	'version', 8,
 	'lua_revision', 350453,
-	'saved_with_revision', 382125,
-	'saved', 1763045067,
+	'saved_with_revision', 382681,
+	'has_data', true,
+	'saved', 1763303269,
 	'affected_resources', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "CommanderProfilePreset",
@@ -48,4 +49,6 @@ return PlaceObj('ModDef', {
 			'ClassDisplayName', "Game rule",
 		}),
 	},
+	'TagCommanderProfiles', true,
+	'TagGameplay', true,
 })
